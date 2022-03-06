@@ -1,6 +1,13 @@
 
 <app-header></app-header>
-<main> 
-  <app-card-product *ngFor="let product of products" [myProduct] = "product"></app-card-product>
+<main>
+  <div>
+    <button (click)="onClickSortDate()">Sort by date</button>
+    <button (click)="onClickSortName()">SORT NAME</button>
+  </div>
+  <div class ="products">
+     <app-card-product *ngFor="let product of (products | sortByDate : sortdate | sortByName : sortname)" [myProduct] = "product"></app-card-product>
+  </div>
+ 
 </main>
 <app-footer></app-footer>

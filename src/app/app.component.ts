@@ -10,10 +10,20 @@ import { ProductsService } from './services/products.service';
 export class AppComponent implements OnInit{
   title = 'KeyboardShop';
   products !: Product[];
+  sortdate ='desc'
+  sortname ="asc"
 
   constructor(private productsService : ProductsService) {}
 
   ngOnInit()  {
     this.products = this.productsService.products;
+  }
+
+onClickSortDate(){
+  this.sortdate === "desc" ? this.sortdate="asc" : this.sortdate="desc"
+}
+
+onClickSortName(){
+  this.sortname === "desc" ? this.sortname="asc" : this.sortname="desc"
 }
 }

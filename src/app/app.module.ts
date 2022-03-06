@@ -3,6 +3,7 @@ import { NgModule,LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeFR from '@angular/common/locales/fr';
 registerLocaleData(localeFR)
+import { SortByDatePipe,SortByNamePipe } from './pipes/product.pipe';
 import { AppComponent } from './app.component';
 import { CardProductComponent } from './card-product/card-product.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,7 +14,9 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     CardProductComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SortByDatePipe,
+    SortByNamePipe
   ],
   imports: [
     BrowserModule
@@ -22,6 +25,11 @@ import { FooterComponent } from './footer/footer.component';
       provide : LOCALE_ID,
       useValue :'fr-FR'
     }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports :[
+    SortByDatePipe
+  ]
+
+
 })
 export class AppModule { }
