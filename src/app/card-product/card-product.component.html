@@ -1,0 +1,12 @@
+<div class="root">
+    <h2>{{myProduct.title}}</h2>
+    <p>Date de sortie : {{myProduct.creationdate}}</p>
+    <img src={{myProduct.imageURL}} width="100" alt={{myProduct.title}}/>
+    <p> Description : {{myProduct.description}}</p>
+    <p> Layout : {{myProduct.layout}}</p>
+    <p> Nombre de touches : {{myProduct.nbofkeys}}</p>
+    <p> Prix : {{myProduct.price}}</p>
+    <p class = " btn-gradient rgb" *ngIf="myProduct.isRGB ===true">RGB</p>
+    <p class = " btn-gradient wireless" *ngIf="myProduct.isWireless ===true">Wireless</p>
+    <p class = "btn-gradient mechanical" *ngIf="myProduct.isMechanical ===true">Mechanical</p>
+    </div>
