@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule,LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeFR from '@angular/common/locales/fr';
 registerLocaleData(localeFR)
-import { SortByDatePipe,SortByNamePipe } from './pipes/product.pipe';
+import { FilterByNamePipe, SortByDatePipe,SortByNamePipe } from './pipes/product.pipe';
 import { AppComponent } from './app.component';
 import { CardProductComponent } from './card-product/card-product.component';
 import { HeaderComponent } from './header/header.component';
@@ -16,10 +17,12 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     FooterComponent,
     SortByDatePipe,
-    SortByNamePipe
+    SortByNamePipe,
+    FilterByNamePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [{
       provide : LOCALE_ID,

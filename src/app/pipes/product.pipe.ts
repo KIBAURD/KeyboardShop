@@ -42,3 +42,13 @@ function sortByNameDesc(a : Product,b : Product) {
     }
     return 0 
 }
+
+@Pipe({ name: 'filterByName' })
+export class FilterByNamePipe implements PipeTransform {
+    transform(products: Product[], term: string) {
+        if(term) {
+            return products.filter((p) =>p.title.toLowerCase().includes(term.toLowerCase()))
+        } else return products;
+        
+    }
+}
