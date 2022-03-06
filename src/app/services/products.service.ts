@@ -16,6 +16,7 @@ import { Product } from "../models/product.model";
             false,
             true,
             90,
+            false,
             new Date('2020-04-04'),
          ),new Product(
              "Razer Ornata V2",
@@ -27,6 +28,7 @@ import { Product } from "../models/product.model";
              false,
              false,
              70,
+             false,
              new Date('2020-06-09')
          ), new Product (
              "Epomaker Anne Pro2",
@@ -38,6 +40,7 @@ import { Product } from "../models/product.model";
              true, 
              true,
              117,
+             false,
              new Date('2019-03-30')
          ), new Product (
              "Logitech G PRO TKL",
@@ -49,6 +52,7 @@ import { Product } from "../models/product.model";
              true,
              true,
              124,
+             false,
              new Date ('2019-10-01')
          ), new Product (
             "Steelseries Apex Pro",
@@ -60,6 +64,7 @@ import { Product } from "../models/product.model";
             false,
             true,
             230,
+            false,
             new Date ('2019-05-27')
          ), new Product(
              "Trust Taro Clavier Filaire",
@@ -71,6 +76,7 @@ import { Product } from "../models/product.model";
              false,
              false,
              15,
+             false,
              new Date ('2020-09-24')
          ) ,new Product (
              "Logitech K380",
@@ -82,6 +88,7 @@ import { Product } from "../models/product.model";
              true,
              false,
              45,
+             false,
              new Date ('2015-09-02')
          ),new Product( 
              "EPOMAKER SKYLOONG SK64",
@@ -93,6 +100,7 @@ import { Product } from "../models/product.model";
              false,
              true,
             82,
+            false,
             new Date('2020-08-17')
          ),new Product (
          "Keychron K6",
@@ -104,6 +112,7 @@ import { Product } from "../models/product.model";
         true,
         true,
         120,
+        false,
         new Date('2022-02-18')
         ), new Product (
             "EPOMAKER K870T",
@@ -115,6 +124,7 @@ import { Product } from "../models/product.model";
             true,
             true,
             90,
+            false,
             new Date('2021-04-12')
         )
 

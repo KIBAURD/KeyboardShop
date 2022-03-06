@@ -3,7 +3,9 @@
         <h2>{{myProduct.title}}</h2>
         <div class="date">Sorti le: {{myProduct.creationdate | date}}</div>
     </header>
-    <img src={{myProduct.imageURL}} width="100" alt={{myProduct.title}}/>
+    <div class="image">
+        <img src={{myProduct.imageURL}} width="100" alt={{myProduct.title}}/>
+    </div>
     <p> Layout : {{myProduct.layout}}</p>
     <p> Nombre de touches : {{myProduct.nbofkeys}}</p>
     <p> Prix : {{myProduct.price}}</p>
@@ -12,4 +14,6 @@
         <p class = " btn-gradient wireless" *ngIf="myProduct.isWireless ===true">Wireless</p>
         <p class = "btn-gradient mechanical" *ngIf="myProduct.isMechanical ===true">Mechanical</p>
     </div>
+    <button (click)="addToFavorite()">Ajouter favori</button>
+    <div class="star" *ngIf="myProduct.isFavorite">⭐</div>
 </section>

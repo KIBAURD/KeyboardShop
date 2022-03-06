@@ -9,6 +9,7 @@ export class Product {
         public isWireless : boolean,
         public isMechanical : boolean,
         public price : number,
+        public isFavorite : boolean,
         public creationdate : Date
 
     ){}
