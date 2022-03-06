@@ -1,7 +1,7 @@
 <section>
     <header>
         <h2>{{myProduct.title}}</h2>
-        <p>Date de sortie : {{myProduct.creationdate}}</p>
+        <div class="date">Sorti le: {{myProduct.creationdate | date}}</div>
     </header>
     <img src={{myProduct.imageURL}} width="100" alt={{myProduct.title}}/>
     <p> Layout : {{myProduct.layout}}</p>
