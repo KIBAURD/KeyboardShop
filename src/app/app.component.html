@@ -1,10 +1,11 @@
 
 <app-header></app-header>
 <main>
-  <div>
-    <button (click)="onClickSortDate()">Sort by date</button>
-    <button (click)="onClickSortName()">SORT NAME</button>
-    <input type="text" name="search" id="search"  [(ngModel)]="search">
+  <div class="actions">
+    <button class="action {{sortdate}}" (click)="onClickSortDate()">Trier par date</button>
+    <button class="action {{sortname}}" (click)="onClickSortName()">Trier par nom </button>
+    <label class="action" for="search">Recherchez un produit :</label>
+    <input class="action" type="text" name="search" id="search"  [(ngModel)]="search">
 
   </div>
   <div class ="products">

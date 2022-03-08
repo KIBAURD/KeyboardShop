@@ -4,4 +4,30 @@
     flex-wrap: wrap
 
 main
-    margin-top: 100px
+    margin-top: 150px
+
+.actions
+    display: flex
+    justify-content: end
+    align-items: center
+    border: 1px solid red
+    height: 50px
+
+    button
+        position: relative
+        padding: 5px 10px 5px 20px
+        border: none
+        border-radius: 3px
+        box-shadow: 1px 1px black
+        cursor: pointer // ↑
+
+        &::before
+            content: '↓'
+            position: absolute
+            left: 5px
+
+        &.desc::before
+            content: '↑'
+
+.action
+    margin: 0 10px
