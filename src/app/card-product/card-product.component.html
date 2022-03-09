@@ -1,19 +1,22 @@
 <section>
     <header>
-        <h2>{{myProduct.title}}</h2>
+        <h2 title="{{myProduct.title}}">{{myProduct.title}}</h2>
         <div class="date">Sorti le: {{myProduct.creationdate | date}}</div>
     </header>
     <div class="image">
         <img src={{myProduct.imageURL}} width="100" alt={{myProduct.title}}/>
     </div>
+    <p class="description">{{myProduct.description}}</p>
     <p> Layout : {{myProduct.layout}}</p>
     <p> Nombre de touches : {{myProduct.nbofkeys}}</p>
-    <p> Prix : {{myProduct.price}}</p>
+    <p> Prix : {{myProduct.price | currency : 'EUR'}}</p>
     <div class="labels">
         <p class = " btn-gradient rgb" *ngIf="myProduct.isRGB ===true">RGB</p>
         <p class = " btn-gradient wireless" *ngIf="myProduct.isWireless ===true">Wireless</p>
         <p class = "btn-gradient mechanical" *ngIf="myProduct.isMechanical ===true">Mechanical</p>
     </div>
-    <button (click)="addToFavorite()">Ajouter favori</button>
-    <div class="star" *ngIf="myProduct.isFavorite">⭐</div>
+    <div class="favorite">
+        <button (click)="addToFavorite()">Ajouter aux favoris</button>
+        <div class="star" *ngIf="myProduct.isFavorite">⭐</div>
+    </div>
 </section>

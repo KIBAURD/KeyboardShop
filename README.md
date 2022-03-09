@@ -1,27 +1,24 @@
-# KeyboardShop
+# Bienvenue sur KeyboardShop !
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Ce projet a été réalisé à l'aide d'[Angular CLI](https://github.com/angular/angular-cli) version 13.0.2 et de Node version 16.13.0
 
-## Development server
+## Accès au site
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Afin d'accéder au site, saisissez la commande `ng serve` dans le terminal afin de lancer le serveur web. Rendez vous au `http://localhost:4200/` pour découvrir le site
 
-## Code scaffolding
+## Un point sur les favoris
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Lorsque vous appuyez sur le bouton "ajouter aux favoris", votre favori sera enregistré en local storage et une petite étoile apparaîtra sur la carte de l'article. (F12 > Onglet Application > Local Storage)
+Vous pouvez recliquer sur le bouton afin de supprimer l'article de vos favoris ( et donc du local storage)
 
-## Build
+## Un point sur le tri
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+La flèche sur les boutons de tri indique l'ordre croissant ↑ ou décroissant ↓. Lorsque vous cliquez, le tri sera effectué. C'est l'ordre du tri vers lequel vous souhaitez aller, non l'état actuel.
 
-## Running unit tests
+## Les descriptions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Les descriptions des produits apparaissent au survol de la souris sur l'image de la carte.
 
-## Running end-to-end tests
+## Le style
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Le style du site a été effectué en Sass pur, sans framework.
